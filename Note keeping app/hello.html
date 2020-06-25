@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Main</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="cards.css">
+		<link rel="stylesheet" href="addingNote.css">
+		<link href="jQuery-contextMenu\dist\jquery.contextMenu.css" rel="stylesheet">
+	</head>
+	<body>
+	<!-- oncontextmenu="return false;" -->
+		<header>
+			<div class="container">
+				<div class="logo">
+					<h1>Notes</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="hello.html">My notes</a></li>
+						<li><a href="archive.html">Archive</a></li>
+					</ul>
+				</nav>
+		</header>
+		<div class="newNote">
+			<input id="noteTitle" type="text" placeholder="Title" maxlength="27">
+			<textarea id="noteContent" placeholder="Content..." cols="40" rows="10"></textarea>
+			<button id="enter">+</button>
+		</div>
+		<div id="mainDIV" class="cards">
+
+		</div>
+	</body>
+<script src = "jQuery.js"></script>
+<script src = "jQuery-contextMenu\dist\jquery.ui.position.js"></script>
+<script src = "jQuery-contextMenu\dist\jquery.contextMenu.js"></script>
+<script src = "contextMenuJQuery-home.js"></script>
+<script src = "to-do.js"></script>
+</html>
